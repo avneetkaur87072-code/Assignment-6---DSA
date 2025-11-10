@@ -56,7 +56,6 @@ Node* reverseInGroups(Node* head, int k) {
     return newHead;
 }
 
-// Print DLL
 void printList(Node* head) {
     while (head) {
         cout << head->data;
@@ -70,7 +69,6 @@ int main() {
     Node* head = nullptr;
     int k = 2;
 
-    // Create DLL
     insertEnd(head, 1);
     insertEnd(head, 2);
     insertEnd(head, 3);
@@ -88,4 +86,5 @@ int main() {
 
     return 0;
 }
+
 
