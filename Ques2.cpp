@@ -54,17 +54,16 @@ public:
 int main() {
     CircularLinkedList cll;
 
-    // Input example
     cll.insertEnd(20);
     cll.insertEnd(100);
     cll.insertEnd(40);
     cll.insertEnd(80);
     cll.insertEnd(60);
 
-    // Output should be: 20 100 40 80 60 20
     cout << "Circular Linked List: ";
     cll.display();
 
     return 0;
 }
+
 
