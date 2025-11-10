@@ -91,7 +91,7 @@ class CircularList{
 //				}
 //				newNode->next = temp->next;
 //				temp->next = newNode;
-   do {
+   do {                                     //here we use do while loop, otherwise the loop will never start because in starting only temp = head
             if (temp->data == val) {
                 Node* newNode = new Node(x);
                 newNode->next = temp->next;
@@ -201,5 +201,6 @@ int main(){
 	
 	return 0;
 }
+
 
 
