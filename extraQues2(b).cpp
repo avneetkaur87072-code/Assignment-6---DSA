@@ -1,15 +1,6 @@
 #include <iostream>
 using namespace std;
 
-int countOnes(int n) {
-    int cnt = 0;
-    while (n > 0) {
-        if (n & 1) cnt++;
-        n = n >> 1;
-    }
-    return cnt;
-}
-
 class Node {
 public:
     int data;
@@ -53,7 +44,7 @@ public:
         if (!head)
             return;
 
-        // Handle case: head has even parity
+        // head has even parity
         while (head && countOnes(head->data) % 2 == 0) {
             if (head->next == head) { // only one node
                 delete head;
@@ -71,7 +62,7 @@ public:
             delete temp;
         }
 
-        // Now handle other nodes
+        // Now for other nodes
         if (!head) return;
         Node* curr = head;
         while (curr->next != head) {
@@ -118,4 +109,5 @@ int main() {
     cll.display();
     return 0;
 }
+
 
